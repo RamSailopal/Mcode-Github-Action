@@ -1,10 +1,12 @@
 #!/bin/bash
+apt-get update
+apt-get install -y git
 /opt/yottadb/current/ydb <<< "H" > /dev/null
 cd /usr/local
 git clone "https://$2:$3@${1##https://}" 
 path=${1##*//*/*/}
 path1=${path%%.git}
-cd path1
+cd $path1
 find . -name "*.m" -exec cp '{}' /data/r1.32_x86_64/r \;
 echo -e "\nRunning compliations\n"
 ostat=0
