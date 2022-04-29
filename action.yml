@@ -21,6 +21,6 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - '${{ repo }}'
-    - '${{ gituser }}'
-    - '${{ gitpass }}'
+    - '${{ inputs.repo }}'
+    - '${{ inputs.gituser }}'
+    - '${{ inputs.gitpass }}'
