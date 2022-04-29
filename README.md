@@ -1,5 +1,7 @@
 # Mcode-Github-Action
 
+![Alt text](Github-Action.JPG?raw=true "Github Action view")
+
 Github Action to test the compilation of M code routines
 
 This action searches a repo for files with a **.m** extension and then attempts to compile the routines in YottaDB returning the output. This forms an integral part of a CI/CD pipeline.
