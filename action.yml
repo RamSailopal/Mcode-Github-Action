@@ -1,0 +1,22 @@
+# action.yml
+name: 'M routine compilation check'
+description: 'Checks M routines for coding errors'
+inputs:
+  repo:
+    description: 'The repo address to clone'
+    required: true
+    default: 'https://github.com/RamSailopal/Mcode-Github-Action.git'
+  gituser:
+    description: 'The username for the repo (Leave blank if public repo)'
+    required: true
+    default: ''
+  gitpass:
+    description: 'The password for the repo (Leave blank if public repo)'
+    required: true
+    default: ''
+outputs:
+  status:
+    description: 'Whether compilation is successful or not'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
