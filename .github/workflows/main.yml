@@ -1,5 +1,7 @@
 name: "build"
-on: [push]
+on:
+ push:
+  branches: [main]
 jobs:
   m_routine_compilation_job:
     runs-on: ubuntu-latest
