@@ -20,3 +20,7 @@ outputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - '${{ repo }}'
+    - '${{ gituser }}'
+    - '${{ gitpass }}'
