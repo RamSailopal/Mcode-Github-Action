@@ -20,7 +20,7 @@ This action searches a repo for files with a **.m** extension and then attempts 
      jobs:
       m_routine_compilation_job:
         runs-on: ubuntu-latest
-        name: Check M code by compliing it
+        name: Check M code by compiling it
         steps:
 
          - name: M routine compilation check step
