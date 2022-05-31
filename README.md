@@ -28,7 +28,7 @@ This action searches a repo for files with a **.m** extension and then attempts 
            with:
              repo: 'https://github.com/RamSailopal/Mcode-Github-Action.git'
              gituser: 'tom'
-             gitpassL 'smith'
+             gitpass: 'smith'
             
 
              
